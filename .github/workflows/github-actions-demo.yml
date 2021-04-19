@@ -7,7 +7,7 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v2
       - name: check repository
-        run: poweshell ls
+        run: powershell ls
       - name: run powershell code
         shell: pwsh
         run: powershell .\GITACTIONS\power.ps1
