@@ -4,7 +4,12 @@ jobs:
   Powershell-GitHub-Actions:
     runs-on: windows-2019
     steps:
-      - run: powershell pwd
-      - run: powershell .\GITACTIONS\power.ps1
+      - name: Check out repository code
+        uses: actions/checkout@v2
+      - name: check repository
+        run: poweshell ls
+      - name: run powershell code
+        shell: pwsh
+        run: powershell .\GITACTIONS\power.ps1
 
       
