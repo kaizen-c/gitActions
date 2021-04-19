@@ -4,6 +4,8 @@ jobs:
   Powershell-GitHub-Actions:
     runs-on: windows-2019
     steps:
-      - run: powershell dir
+      - run:  dir
       - run: powershell pwd
-      - run: powershell power.ps1
+      - run: powershell .\gitActions\MyScript\power.ps1
+
+      
