@@ -6,4 +6,4 @@ jobs:
     steps:
       - run: powershell dir
       - run: powershell pwd
-      - run: powershell .\MyScript\power.ps1
+      - run: powershell power.ps1
