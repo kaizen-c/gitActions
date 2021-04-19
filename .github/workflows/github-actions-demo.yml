@@ -6,4 +6,4 @@ jobs:
     steps:
       - run: powershell dir
       - run: powershell pwd
-      - run:  Powershell .\power.ps1
+      - run:  Powershell power.ps1
