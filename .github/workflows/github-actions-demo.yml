@@ -6,6 +6,6 @@ jobs:
     steps:
       - run:  dir
       - run: powershell pwd
-      - run: powershell .\gitActions\MyScript\power.ps1
+      - run: powershell .\GITACTIONS\power.ps1
 
       
