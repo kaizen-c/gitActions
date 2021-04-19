@@ -4,4 +4,6 @@ jobs:
   Powershell-GitHub-Actions:
     runs-on: windows-2019
     steps:
-      - run:  Powershell power.ps1
+      - run: powershell ls
+      - run: powershell pwd
+      - run:  Powershell ..\power.ps1
