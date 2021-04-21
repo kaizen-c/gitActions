@@ -22,9 +22,9 @@ jobs:
       - name: Run Azure PowerShell script
         uses: azure/powershell@v1
         with:
+          azPSVersion: "latest"
           inlineScript: |
             Get-AzVM -ResourceGroupName "cs-test"
-            azPSVersion: "latest"
 
 
       
