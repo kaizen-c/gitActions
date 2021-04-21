@@ -6,10 +6,24 @@ jobs:
     steps:
       - name: Check out repository code
         uses: actions/checkout@v2
+
       - name: check repository
         run: powershell ls
+
       - name: run powershell code
         shell: pwsh
         run: powershell .\power.ps1
+
+      - name: Azure Login
+        uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - name: Run Azure PowerShell script
+        uses: azure/powershell@v1
+        with:
+          inlineScript: |
+            Get-AzVM -ResourceGroupName "cs-test"
+
 
       
