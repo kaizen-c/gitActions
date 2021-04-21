@@ -24,6 +24,7 @@ jobs:
         with:
           inlineScript: |
             Get-AzVM -ResourceGroupName "cs-test"
+            azPSVersion: "latest"
 
 
       
