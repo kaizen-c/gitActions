@@ -1,5 +1,6 @@
 name: GitHub Actions  on Powershell
-on: [push]
+on: 
+  repository_dispatch:
 jobs:
   Powershell-GitHub-Actions:
     runs-on: windows-2019
