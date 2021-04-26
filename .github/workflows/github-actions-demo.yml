@@ -14,18 +14,18 @@ jobs:
         shell: pwsh
         run: powershell .\power.ps1
 
-      - name: Azure Login
-        uses: azure/login@v1
-        with:
-          creds: ${{ secrets.AZURE_CREDENTIALS }}
-          enable-AzPSSession: true
+#      - name: Azure Login
+#        uses: azure/login@v1
+#        with:
+#          creds: ${{ secrets.AZURE_CREDENTIALS }}
+#          enable-AzPSSession: true
 
-      - name: Run Azure PowerShell script
-        uses: azure/powershell@v1
-        with:
-          azPSVersion: "latest"
-          inlineScript: |
-            Get-AzVM -ResourceGroupName "cs-test"
+#      - name: Run Azure PowerShell script
+#        uses: azure/powershell@v1
+#        with:
+#          azPSVersion: "latest"
+#          inlineScript: |
+#            Get-AzVM -ResourceGroupName "cs-test"
 
 
       
